@@ -1,5 +1,6 @@
 # vagrant
 Vagrantfile
+'''
 ENV['VAGRANT_SERVER_URL'] = 'http://vagrant.elab.pro'
 ENV['VAGRANT_NO_PARALLEL'] = 'yes'
 Vagrant.configure("2") do |config|
@@ -29,3 +30,4 @@ config.vm.define "mydebian" do |kmaster|
     end
   end 
 end
+'''
