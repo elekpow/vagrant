@@ -47,9 +47,9 @@ Vagrant.configure("2") do |config|
 config.vm.provision "shell" do |s|
   ssh_prv_key = ""
   ssh_pub_key = ""
-  if File.file?("./id_ed25519")
-    ssh_prv_key = File.read("./id_ed25519")
-    ssh_pub_key = File.readlines("./id_ed25519.pub").first.strip
+  if File.file?("#{Dir.home}/.ssh/id_ed25519")
+    ssh_prv_key = File.read("#{Dir.home}/.ssh/id_ed25519")
+    ssh_pub_key = File.readlines("#{Dir.home}/.ssh/id_ed25519.pub").first.strip
   else
     puts "No SSH key found. You will need to remedy this before pushing to the repository."
   end
