@@ -77,3 +77,11 @@ end
 </details>
 
 
+3. управление :
+ - `vagrant up`
+ - `vagrant destroy -f` 
+ - `vagrant status`
+
+ 
+
+
