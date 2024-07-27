@@ -7,6 +7,9 @@
 `ssh-keygen -t ed25519 -N "new_passphrase" -f ./id_ed25519`
 
 2. Для запуска vagrant создаем файл "Vagrantfile"
+
+Создаем первую 'kmaster', параметр NodeCount = "" задает количество дополнтельных виртуальных машин 'kworker'
+
 <details>
   <summary>Содержимое Vagrantfile</summary>
 
