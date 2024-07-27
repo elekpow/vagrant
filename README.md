@@ -80,9 +80,13 @@ end
 3. управление :
  - `vagrant up`
  - `vagrant destroy -f` 
+ 
  - `vagrant status`
+ - `vagrant global-status`
+
 
 для подключения можно использовать команду:
- - `vagrant ssh`
+ - `vagrant ssh` 
+ - `ssh -i ~/.ssh/id_ed25519 vagrant@192.168.56.10`
  
 
